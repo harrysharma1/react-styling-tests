@@ -12,7 +12,7 @@ export const Nav = () => {
       </div>
       <div className="flex flex-row mr-[250px] gap-x-2">
         <div className="flex flex-row bg-white" >
-          <input type="text" placeholder="Search Anime..." className=" text-black outline-none placeholder:text-[12px] pl-2 pr-2 text-[12px]" />
+          <input type="text" placeholder="Search Anime..." className=" text-black outline-none placeholder:text-[12px] pl-4 pr-4" />
           <FaIcon.FaSearch size={18} className="text-[#e56e2e] mt-1 mr-1 cursor-pointer " />
         </div>
         <a href="#" className="hover:underline"><GrIcon.GrFacebook size={25} /></a>
