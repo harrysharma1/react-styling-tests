@@ -4,7 +4,7 @@ import * as GrIcon from 'react-icons/gr'
 export const Nav = () => {
   return <>
     <div className="flex flex-row justify-between items-center bg-[#e56e2e] text-white p-8 fixed w-full h-12 outline-black">
-      <img src="https://www.animefillerlist.com/sites/all/themes/afl/i/logo.png" className="ml-[200px] w-64 " />
+      <img src="https://www.animefillerlist.com/sites/all/themes/afl/i/logo.png" className="ml-[200px] w-64 cursor-pointer" />
       <div className="flex flex-row gap-x-5 ml-[200px] text-[14px] ">
         <a href="#" className="underline">Shows</a>
         <a href="#" className="hover:underline">Login</a>
