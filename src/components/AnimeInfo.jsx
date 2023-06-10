@@ -1,5 +1,7 @@
 import * as AiIcon from 'react-icons/ai';
+import goku_icon from '../assets/goku_icon.jpeg'
 
+// use url if you want: https://www.animefillerlist.com/sites/all/themes/afl/i/goku.jpg
 export const AnimeInfo = () => {
   return (
     <div className="flex flex-col">
@@ -17,12 +19,12 @@ export const AnimeInfo = () => {
       <div className="font-semibold text-[#3e3c3e] mt-[130px] ml-8">
         Page Contributors:
       </div>
-      <div className="grid  ml-8 grid-cols-10">
+      <div className="grid gap-2  ml-8 grid-cols-10">
         {Array(65).fill().map((_, index) => (
           <img
             key={index}
-            src="https://www.animefillerlist.com/sites/all/themes/afl/i/goku.jpg"
-            className="w-[40px] h-[40px] mt-[10px] cursor-pointer rounded-full"
+            src={goku_icon}
+            className="w-[40px] h-[40px] mt-[10px] cursor-pointer "
             alt="goku" />
         ))}
       </div>
