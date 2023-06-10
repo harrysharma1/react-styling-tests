@@ -6,12 +6,12 @@ export const AnimeInfo = () => {
   return (
     <div className="flex flex-col">
       <h1 className="font-sans text-[25px] font-semibold text-[#3e3c3e] ml-8">Naruto Shippuden Filler List</h1>
-      <div className="flex flex-row ml-8">
-        <AiIcon.AiOutlineClockCircle className="text-black opacity-40 font-extrabold mt-[2px]" />
-        <p className="ml-[4px] text-sm text-black opacity-40">Updated on March 7, 2023</p>
+      <div className="flex flex-row ml-8 mt-3">
+        <AiIcon.AiOutlineClockCircle className="text-[#797979] font-extrabold mt-[1.5px]" />
+        <p className="ml-[4px] text-[12px] text-[#797979] ">Updated on March 7, 2023</p>
       </div>
-      <div className="w-96 h-24 ml-8 text-[14.5px]">
-        <p className="text-black opacity-40">
+      <div className="w-96 h-24 ml-8 mt-3 text-[14.5px]">
+        <p className="text-[#848181] ">
           Naruto Shippuden was an anime series that ran from 2007 to 2017. In total 500 episodes of Naruto Shippuden were aired. With a total of 203 reported filler episodes, Naruto Shippuden has a high filler percentage of 41%.<br /><br />
           Set two-and-a-half years after the defection of Sasuke Uchiha, Shippuden continues where Naruto left off. Becoming increasingly powerful; Naruto will stop at nothing to protect his village, save his friend, and put an end to the evil organization known as the Akatsuki.
         </p>
