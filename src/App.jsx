@@ -4,6 +4,7 @@ import { Nav } from './components/Nav';
 import { AnimeInfo } from './components/AnimeInfo';
 import * as React from 'react';
 import { AnimeTabs } from './components/AnimeTabs';
+import { EpisodeList } from './components/EpisodeList';
 
 function App() {
     return(
@@ -15,6 +16,8 @@ function App() {
         <AnimeInfo/>
       </div>
       <AnimeTabs/>
+      <EpisodeList/>
+
      </div>
     )
 }
