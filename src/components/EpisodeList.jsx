@@ -1,22 +1,39 @@
-import * as React from 'react';
+import {useState, useEffect} from 'react';
+import episode from './data/episode.json'
+
+
 const AnimeTitle=()=>{
-  return(
+  const columns=["#","Title","Type","Airdate"]
+  return (
     <>
-      <table class="table-auto outline border-collapse w-[50%] ml-[230px]  outline-[0.5px] outline-[#CFCFCF] ">
-  <thead className="bg-[#CFCFCF]" > 
-    <tr>
-      <th>#</th>
-      <th>Title</th>
-      <th>Type</th>
-      <th>Airdate</th>
-    </tr>
-  </thead>
-  <tbody className="">
-    
-  </tbody>
-</table>
+      <table className="w-[50vw] ml-[230px] border table-auto">
+        <thead className="bg-[#CFCFCF]">
+          <tr>
+            {columns.map((column) => (
+              <th className="border-x-2" key={column}>
+                <span className="float-left">{column}</span>
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {episode.map((entry) => (
+            <tr key={entry.id}>
+              {columns.map((column) => (
+                <td key={column} className="border-x-2 border-y-2">
+                  <span className={column.toLocaleLowerCase()==="title"?"text-[#2785c1] text-[13px] hover:underline cursor-pointer":"text-[#3e3c3c] text-[15px] font-sans"}>
+                     {entry[column.toLowerCase()]}
+                  </span>
+                 
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </>
-  )
+  );
+
 }
 export const EpisodeList = () => {
   const options = [];
