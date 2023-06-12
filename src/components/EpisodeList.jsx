@@ -6,7 +6,7 @@ const AnimeTitle=()=>{
   const columns=["#","Title","Type","Airdate"]
   return (
     <>
-      <table className="w-[50vw] ml-[230px] border table-auto">
+      <table className="w-[540px] ml-[250px] border table-auto">
         <thead className="bg-[#CFCFCF]">
           <tr>
             {columns.map((column) => (
@@ -43,10 +43,10 @@ export const EpisodeList = () => {
 
   return (
     <>
-      <div className="flex flex-row ml-[230px] mt-[10px]">
+      <div className="flex flex-row ml-[250px] mt-[10px]">
         <div className="text-[25px] font-semibold text-[#3e3c3e] font-sans">Naruto Shippuden Episode List</div>
         <div className="flex flex-col ">
-          <span className="ml-[240px] text-[13px]">Jump to: 
+          <span className="ml-[85px] text-[13px]">Jump to: 
             <select className="outline rounded-sm ml-1">
               {options.map((option) => (
                 <option value={option.value} key={option.value}>{option.label}</option>
@@ -54,11 +54,11 @@ export const EpisodeList = () => {
             </select>
             
           </span>
-          <span className="ml-[240px] text-[13px] capitalize text-[#e56e2e] mt-[13px] hover:underline cursor-pointer" onClick={()=>{console.log("Hide Episode click")}}>Hide episode title</span>
+          <span className="ml-[85px] text-[13px] capitalize text-[#e56e2e] mt-[10px] hover:underline cursor-pointer" onClick={()=>{console.log("Hide Episode click")}}>Hide episode title</span>
         </div>
       </div>
-
       <AnimeTitle/>
+
     </>
   );
 };

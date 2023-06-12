@@ -16,10 +16,13 @@ export const AnimeTabs = () => {
   };
 
   return (
-    <Box sx={{ width: '82%', px: 29 ,flexShrink:0}}>
+    <Box sx={{ width: 1050, px: 29 ,flexShrink:0,animation:'none'}}>
       <TabContext value={value}>
-        <Box sx={{ borderBottom: 0.3, borderColor: 'divider'}}>
-          <TabList onChange={handleChange} aria-label="lab API tabs example" >
+        <Box sx={{ borderBottom: 0, borderColor: 'divider'}}>
+          <TabList onChange={handleChange} aria-label="lab API tabs example"sx={{
+            '& button': {borderRadius:2,fontSize:'13px',color:'#727272',background:'white'},
+            '& button:hover':{background:'#e56e2e'},
+          }} >
             <Tab label="Show all episodes" value="1" />
             <Tab label="Show filler episodes" value="2" />
             <Tab label="Show canon episodes" value="3" />
